@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+        }
+
+        /* Container */
+        .weather-app {
+            max-width: 400px;
+            margin: 80px auto;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Search */
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            border-radius: 6px 0 0 6px;
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #1e293b;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 0 6px 6px 0;
+        }
+
+        /* Weather Info */
+        .temp {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .city {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 8px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="weather-app">
+        <h1>Weather</h1>
+
+        <div class="search-box">
+            <input type="text" placeholder="Enter city">
+            <button>Search</button>
+        </div>
+
+        <div class="city">New Delhi</div>
+        <div class="temp">32°C</div>
+        <div>Sunny</div>
+
+        <div class="details">
+            <div class="box">
+                <div>Humidity</div>
+                <strong>60%</strong>
+            </div>
+            <div class="box">
+                <div>Wind</div>
+                <strong>12 km/h</strong>
+            </div>
+            <div class="box">
+                <div>Feels Like</div>
+                <strong>34°C</strong>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
