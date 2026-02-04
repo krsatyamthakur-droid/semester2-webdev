@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grandparent {
+    background-color: lightblue;
+    width: 1500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkblue;
+}
+
+#parent {
+    background-color: coral;
+    width: 750px;
+    height: 250px;
+    border: 2px solid darkred;
+
+}
+
+#child{
+    background-color: lightgreen;
+    width: 375px;
+    height: 125px;
+    border: 2px solid darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64.5px;
+    margin-left: 155.5px;
+}
