@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="Score">Score:0 </h1>
+    <div class="bond">
+
+  <div class="box"></div>
+
+
+</div>
+
+    <div id="root"></div> 
+
+    <script type="text/babel">
+      //transpiler
+      //select that node
+      const rootEle = document.querySelector("#root");
+      //create element
+
+      function Heading() {
+        const a = 7;
+        return 
+      }
+
+      ReactDOM.render(<Heading/>, rootEle);
+      // const box1=document.querySelector("#box")
+      // const game=()=>{
+      //  console.log("you click the box")
+
+      // };
+      // box1.addEventListener(click(),game);
+let count = 0;
+const scoreDisplay = document.querySelector("#Score");
+const mainBox = document.querySelector(".box");
+
+mainBox.addEventListener("click", () => {
+    count++; // Increase the number
+    scoreDisplay.innerText = `Score: ${count}`; // Update the text
+    // 2. Generate Random Positions
+    // We use 80% so the 100px box doesn't overflow the 500px container
+    const randomTop = Math.floor(Math.random() * 80); 
+    const randomLeft = Math.floor(Math.random() * 80);
+
+    // 3. Apply the new position
+    mainBox.style.top = randomTop + "%";
+    mainBox.style.left = randomLeft + "%";
+    
+    // Remove the initial center transform once it starts moving
+    mainBox.style.transform = "none";
+});
+
+
+      
+    </script>
+  </body>
+</html>

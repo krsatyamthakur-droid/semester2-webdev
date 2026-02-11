@@ -9,7 +9,7 @@
     background-color: white
 }
 #second-main{
-    height: ;
+    height: 100px; ;
    display: flex;
    flex-direction: row;
    height: 200px;
