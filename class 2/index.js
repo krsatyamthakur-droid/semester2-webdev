@@ -11,7 +11,7 @@ console.log(str.charCodeAt(9));   //ASCII code at given index
 
 console.log(str.substring(10)); // startIdx only will print until the end.
 
-//start < end
+//start < end // ok
 console.log(str.substring(10,12)); //str[10],str[11]
 
 //start > end
